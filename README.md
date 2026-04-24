@@ -13,10 +13,24 @@ High-performance C++20 engine for real-time limit order book (LOB) reconstructio
 
 ## Build (Linux / WSL)
 
+If you don't have CMake installed in WSL yet:
+
+```bash
+sudo apt-get update
+sudo apt-get install -y cmake ninja-build
+```
+
 ```bash
 cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
 cmake --build build -j
 ./build/lob_cli --help
+```
+
+Quick compile (no CMake):
+
+```bash
+mkdir -p build
+g++ -std=c++20 -O2 -Iinclude src/main.cpp src/mmap_file.cpp -o build/lob_cli
 ```
 
 ## What exists today (base level)
@@ -28,4 +42,3 @@ cmake --build build -j
 ## Next (slow and steady)
 
 When you’re ready, we’ll implement the first *real* ITCH decoders (Add/Execute/Cancel/Delete) and a correctness-first book, then add snapshot checks.
-

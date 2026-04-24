@@ -55,6 +55,10 @@ int main(int argc, char** argv) {
   }
 
   const std::string cmd = argv[1];
+  if (cmd == "-h" || cmd == "--help" || cmd == "help") {
+    print_usage(argv[0]);
+    return 0;
+  }
   if (cmd == "count") {
     if (argc != 3) {
       print_usage(argv[0]);
@@ -66,4 +70,3 @@ int main(int argc, char** argv) {
   print_usage(argv[0]);
   return 2;
 }
-
