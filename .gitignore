@@ -1,0 +1,20 @@
+# Build outputs
+/build/
+/cmake-build-*/
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Editors / tooling
+.cache/
+.vscode/
+.idea/
+compile_commands.json
+
+# OS cruft
+.DS_Store
+Thumbs.db
+
