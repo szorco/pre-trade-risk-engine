@@ -46,6 +46,6 @@ pytest tests/ -v --cov=. --cov-report=term-missing
 ## How does it work (high-level overview)
 
 Given some Trade input, the engine asks if this trade fits within in our criteria of risk, limits, and other constraints. The current criteria is as follows (more to come later):
-- Net Postion Limit -> (total shares in one instrument)
-- Gross Exposure Limit -> (total risk in market regardless of direction)
+- **Net Postion Limit** : (total shares in one instrument)
+- **Gross Exposure Limit** : (total risk in market regardless of direction)
 
