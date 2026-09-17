@@ -22,7 +22,7 @@ Order: Synthetic orders
 
     
     - timeStamp: time stamp of order being initially processed
-        - down to nanosecond
+        - down to nanosecond,, 
 
 */
 enum class Side {BUY , SELL};
